@@ -1,3 +1,5 @@
+package СonfigManager;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,7 +32,7 @@ public class ConfigurationManager {
         return configSettings.getOrDefault(key, "Key not found");
     }
 
-    // Print all configurations
+
     public void printConfigurations() {
         System.out.println("Configuration Settings:");
         for (Map.Entry<String, String> entry : configSettings.entrySet()) {
